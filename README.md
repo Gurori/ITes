@@ -30,7 +30,7 @@
  * 🎨 CSS
  * ☕ JavaScript
  * ⚛ React
- * 🅱 Bootstrap
+ * 🌬 Tailwind
  * 💫 Lucide
 
 ## 📰 Инструкция по установке
