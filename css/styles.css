@@ -1,0 +1,195 @@
+html {
+    font-family: 'manrope';
+    src: url('Manrope\Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.signin {
+    /*background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+    background-image: url('images/фон2.png');*/
+    background: #242424;
+}
+.personalaccount {
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+    background-image: url('images/фон3.png');
+}
+.signup {
+    background: #665BE3;
+}
+.boxShadowPurple1 {
+position: absolute;
+width: 593px;
+height: 593px;
+
+background: linear-gradient(0deg, rgba(153, 128, 230, 0.1), rgba(153, 128, 230, 0.1)), rgba(153, 128, 230, 0.1);
+filter: blur(125px);
+}
+.boxShadowPurple2 {
+position: absolute;
+width: 945px;
+height: 945px;
+
+background: rgba(153, 128, 230, 0.2);
+filter: blur(166px);
+}
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.center {
+    /*position: relative  ;
+    left: 50%;
+    
+    transform: translate(-50%, 0);*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.white {
+    background: #FAFAFA;
+}
+.purple {
+    background: #665BE3;
+}
+.gray {
+    background: #373A43;
+}
+.br-35 {
+    border-radius: 35px;
+}
+header {
+    width: 100%;
+    padding: 0 20px;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+input {
+width: 385.52px;
+height: 62.77px;
+border: 0;
+padding-left: 25px;
+margin: 10px 40px;
+
+background: #FAFAFA;
+border-radius: 20px;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: rgba(75, 68, 67, 0.6);
+}
+.shadowBlack {
+    filter: drop-shadow(0 0 7px rgba(0,0,0,0.3));
+}
+.shadowPurple {
+filter: drop-shadow(0 0 7px rgba(102, 91, 227, 0.6));
+}
+.shadowWhite {
+    filter: drop-shadow(0 0 7px #D3D3D3);
+}
+.mt-120 {
+    margin-top: 120px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.iconOnSignin {
+    position: absolute;
+    left: 50%;
+    top: px;
+    transform: translate(-50%, -50%);
+}
+button {
+width: 217px;
+height: 49px;
+margin: 30px 0;
+
+border-radius: 45px;
+border: 0;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+cursor: pointer;
+
+color: #FAFAFA;
+}
+a {
+width: 183px;
+height: 19px;
+margin-bottom: 40px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+text-decoration: none;
+
+color: #4B4443;
+}
+hr {
+border: 1px solid rgba(0, 0, 0, 0.3);
+}
+p {
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+
+color: #FAFAFA;
+}
+.sidepanel {
+    height: 100%; /* Укажите высоту */
+    width: 250px; /* 0 ширина-измените это с помощью JavaScript */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Оставайтесь на вершине */
+    padding: 0;
+    top: 0;
+    left: 0;
+    background: #373A43;
+    box-shadow: 27px 0px 53px rgba(0, 0, 0, 0.26);
+    overflow-x: hidden;
+    padding: 40px;
+}
+.search {
+width: 620px;
+height: 55px;
+
+background: rgba(255, 255, 255, 0.1);
+box-shadow: 0px 4px 35px 6px rgba(0, 0, 0, 0.09);
+border-radius: 54px;
+border: 0;
+}
+.mainOfPersonalaccount {
+    margin-left: 290px;
+    padding: ;
+}
