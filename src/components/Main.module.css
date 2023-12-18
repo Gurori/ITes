@@ -1,0 +1,20 @@
+.bold {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 77px;
+    
+    color: #252628;
+    }
+    .purple {
+        color: #665BE3;
+    }
+    .button {
+    box-sizing: border-box;
+    
+    @apply mr-10 px-5 py-2;
+    
+    border: 1px solid #2F2929;
+    border-radius: 25px;
+    }

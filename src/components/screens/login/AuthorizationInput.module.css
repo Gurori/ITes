@@ -1,0 +1,55 @@
+.AuthorizationInput {
+width: 410.52px;
+height: 62.77px;
+
+  @apply pl-5 bg-white rounded-2xl;
+
+  background: #fafafa;
+  border-radius: 20px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: rgba(75, 68, 67, 0.6);
+  
+
+  
+}
+.input {
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.3));
+}
+.button {
+width: 217px;
+height: 49px;
+
+filter: drop-shadow(0 0 7px rgba(102, 91, 227, 0.6));
+
+@apply mt-3 text-white rounded-full bg-purple;
+}
+.backround1 {
+width: 945px;
+height: 945px;
+
+background: rgba(153, 128, 230, 0.2);
+filter: blur(166px);
+}
+.backround2 {
+width: 593px;
+height: 593px;
+
+background: linear-gradient(0deg, rgba(153, 128, 230, 0.1), rgba(153, 128, 230, 0.1)), rgba(153, 128, 230, 0.1);
+filter: blur(125px);
+
+}
+.text {
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+@apply pt-5;
+
+color: #4B4443;
+}

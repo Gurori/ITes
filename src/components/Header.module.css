@@ -1,0 +1,15 @@
+.button {
+    
+    background: #252628;
+    border-radius: 25px;
+    
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+    
+    @apply mr-10 px-8 py-2.5;
+    }

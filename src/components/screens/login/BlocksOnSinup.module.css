@@ -1,0 +1,17 @@
+.bg {
+width: 183.18px;
+height: 199px;
+@apply py-10 flex justify-center;
+
+background: #FFFFFF;
+border-radius: 25px;
+}
+.text {
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 17px;
+line-height: 23px;
+
+color: #1E1F21;
+}

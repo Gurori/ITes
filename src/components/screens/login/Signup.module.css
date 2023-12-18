@@ -1,0 +1,21 @@
+.input {
+filter: drop-shadow(0 0 7px #D3D3D3);
+}
+.button {
+width: 217px;
+height: 62px;
+
+background: #252628;
+border-radius: 45px;
+
+filter: drop-shadow(0 0 7px #5145E0);
+border-radius: 45px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+
+color: #FAFAFA;
+}

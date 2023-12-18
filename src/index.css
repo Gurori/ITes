@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #2b2b2b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter";
+  font-style: normal;
+  color: #252628;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+}
+h2 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+}
+h3 {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: -0.019em;
+}
+h4 {
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 57px;
+}
+h5 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+}
+h6 {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 39.94px;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+hr {
+
+border: 1px solid rgba(0, 0, 0, 0.3);
+}

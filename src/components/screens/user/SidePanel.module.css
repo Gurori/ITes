@@ -1,0 +1,14 @@
+.SidePanel {
+width: 283px;
+@apply bg-black h-screen px-8;
+box-shadow: 15px 0px 42px rgba(0, 0, 0, 0.26);
+}
+.text {
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 15px;
+
+color: #A7A7A7;
+}
