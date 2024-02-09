@@ -24,7 +24,7 @@ function SidePanel() {
 
       <hr className="my-10" />
 
-      <Link>
+      <Link to="/user/edit">
         <p className="text-white mb-10">Настроить профиль</p>
       </Link>
       <Link>

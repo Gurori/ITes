@@ -4,6 +4,8 @@ import Login from "./components/screens/login/Login";
 import Signup from "./components/screens/login/Signup";
 import SignupStep2 from "./components/screens/login/Signup.step2";
 import UserPage from "./components/screens/user/UserPage";
+import UserEditPage from "./components/screens/userEdit/UserEdit";
+import CompletedTaskInfo from "./components/screens/info/CompletedTaskInfo";
 
 function App() {
   return (
@@ -18,7 +20,10 @@ function App() {
           </Route>
           <Route path="user/">
             <Route index element={<UserPage />} />
-            <Route path="edit" element="" />
+            <Route path="edit" element={<UserEditPage />} />
+          </Route >
+          <Route path="info/">
+            <Route path="task" element={<CompletedTaskInfo />} />
           </Route>
         </Route>
       </Routes>

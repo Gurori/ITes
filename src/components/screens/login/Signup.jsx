@@ -11,7 +11,7 @@ function Signup() {
                 <Input style={Styles.input} placeholder="email"/> <br />
                 <Input style={Styles.input} placeholder="номер телефона"/> <br />
 
-                <Link to="">
+                <Link to="/user/edit">
                     <button className={`${Styles.button} mt-5`}>Зарегистрироваться</button>
                 </Link>
             </div>

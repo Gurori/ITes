@@ -5,6 +5,7 @@ import guys from "/guys.svg";
 import styles from "./Main.module.css";
 import GrayText from "./GrayText";
 import React from "react";
+import { Link } from "react-router-dom";
 import TextOnMain from "./TextOnMain";
 
 function Main() {
@@ -25,7 +26,9 @@ function Main() {
             У нас собраны все самые необходимые функции для развития сообщества
             МПИТ.
           </p>
+          <Link to="/signin/identifier">
           <button className={styles.button}>Узнать поподробнее</button>
+          </Link>
         </div>
       </div>
       <div class="absolute -right-0 top-16">

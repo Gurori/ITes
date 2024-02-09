@@ -5,9 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      'purple': '#665BE3',
+    extend: {
+      colors: {
+        'purple': '#665BE3',
       'yellow' : '#EFDE68',
       'white' : '#FAFAFA',
       'gray': '#D9D9D9',
@@ -18,7 +18,10 @@ export default {
       'violet' : '#3C1F63',
       'violaceous' : '#B74C85',
       'xanthous' : '#CBB43B',
+      'reallygray' : '#747474',
+      },
     },
   },
+
   plugins: [],
 }
