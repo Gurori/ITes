@@ -5,7 +5,7 @@ import facebookLogo from "/facebookLogo.svg";
 import whatsappLogo from "/whatsappLogo.svg";
 import purpleStar from "/purpleStar.svg";
 import mlgLogo from "/mlgLogo.svg";
-import phoneIcon from "/phoneIcon.svg";
+import { Phone } from "lucide-react";
 
 function Footer() {
   return (
@@ -27,7 +27,7 @@ function Footer() {
           </div>
 
           <div className="flex justify-start pt-5">
-            <img src={phoneIcon} alt="" />
+            <Phone className="text-black" size={18} />
             <p className="pl-2">+00000000000</p>
           </div>
         </div>

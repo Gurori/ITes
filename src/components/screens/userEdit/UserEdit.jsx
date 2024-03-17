@@ -4,13 +4,13 @@ import styles from "./UserEdit.module.css";
 import Search from "../../Search";
 import Input from "./InputOnUserEdit";
 import Block from "./Blocks";
-import Back from "/backIcon.svg";
 import violaceous from "/violaceousStar.svg";
 import violet from "/violetStar.svg";
 import xanthous from "/yellowStar.svg";
 import pink from "/pinkStar.svg";
 import userIcon from "/userIcon.svg";
-import penIcon from "/penIcon.svg";
+import { ChevronLeft } from "lucide-react";
+import { Pencil } from "lucide-react";
 
 class UserEditPage extends React.Component {
   render() {
@@ -22,7 +22,7 @@ class UserEditPage extends React.Component {
         <main className={styles.main}>
           <div className="flex items-center">
             <Link to="/user">
-            <img src={Back} alt="" />
+              <ChevronLeft className="bg-gray pr-0.5 rounded-full w-8 h-8" strokeWidth={0.7} />
             </Link>
             <p className="text-white ml-5">Настроить профиль</p>
           </div>
@@ -46,8 +46,8 @@ class UserEditPage extends React.Component {
           <p className="text-white mt-10">Выберите аватарку</p>
           <div className="relative ml-10 mt-5">
             <img src={userIcon} alt="" />
-            <div className="bg-reallygray rounded-full absolute h-8 w-8 bottom-2 left-28">
-              <img className="center" src={penIcon} alt="" />
+            <div className="bg-reallygray rounded-full absolute h-9 w-9 bottom-2 left-28">
+              <Pencil className="center text-white" strokeWidth={1} size={20} />
             </div>
           </div>
         </main>

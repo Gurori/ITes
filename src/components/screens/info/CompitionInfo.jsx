@@ -1,15 +1,15 @@
 import React from "react";
 import Info from "./Info";
-import DarkGrayButton from "./DarkGrayButton";
+import PurpleButton from "./PurpleButton";
 
-class CompletedTaskInfo extends React.Component {
+class CompitionInfo extends React.Component {
   render() {
     return (
       <>
         <Info
-          color="bg-dark-gray"
+          color="bg-purple"
           arrowColor="text-white"
-          title="О задании"
+          title="О конкурсе"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -18,11 +18,11 @@ class CompletedTaskInfo extends React.Component {
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat."
-          button={<DarkGrayButton text="Получено баллов: 20" />}
+          button={<PurpleButton text="Отправить заявку" />}
         />
       </>
     );
   }
 }
 
-export default CompletedTaskInfo;
+export default CompitionInfo;

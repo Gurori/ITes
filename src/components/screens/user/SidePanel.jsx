@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import itesLogo from "/itesWhiteLogo.svg";
 import UserIcon from "/userIcon.svg";
-import PenIcon from "/penIcon.svg";
 import JobTitle from "../../JobTitle";
 import Styles from "./SidePanel.module.css";
+import { Pencil } from "lucide-react";
 
 function SidePanel() {
   return (
@@ -14,7 +14,7 @@ function SidePanel() {
       <div className="grid justify-items-center">
         <img src={UserIcon} alt="" />
           <p className="text-white text-xl">Username</p>
-          <img className="relative -top-5 left-16" src={PenIcon} alt="" />
+          <Pencil className="relative -top-5 left-16 text-white" size={16} strokeWidth={1} />
           <div className="-mt-3">
           <JobTitle color="text-violaceous" text="Дизайнер" />
           </div>

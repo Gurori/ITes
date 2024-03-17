@@ -1,6 +1,6 @@
 import React from "react";
-import Arrow from "/arrow.svg";
 import styles from "./UserPage.module.css";
+import { ChevronRight } from "lucide-react";
 
 class BlocksOnUserPage extends React.Component {
     render() {
@@ -9,7 +9,7 @@ class BlocksOnUserPage extends React.Component {
             <div className={`${styles.border} ${this.props.borderColor}`}>
                 <p className="text-xl text-white"><b>{this.props.text1}</b></p>
                 <p className="text-xs text-gray">{this.props.text2}</p>
-                <img className="absolute bottom-4 right-4" src={Arrow} alt="" />
+                <ChevronRight className="absolute bottom-3 right-2 text-white" size={26} />
             </div>
         </div>
       );

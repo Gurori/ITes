@@ -1,13 +1,12 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Link } from "react-router-dom";
 import SidePanel from "./SidePanel";
 import Search from "../../Search";
 import Block from "./BlocksOnUser";
 import Blocks from "./Blocks2";
 import Star from "/smallStar.svg";
-import BlackArrow from "/blackArrow.svg";
 import Messages from "/messages.svg";
-import PlusLogo from "/plus.svg";
 import Project from "../../Project";
 import styles from "./UserPage.module.css";
 import BigStar from "/bigBlackStar.svg";
@@ -16,6 +15,7 @@ import Text from "../../InformationText";
 import Achievement from "../../Achievement";
 import Firts from "/firtsPlace.svg";
 import Third from "/thirdPlace.svg";
+import { Plus } from "lucide-react";
 
 class UserPage extends React.Component {
   render() {
@@ -37,12 +37,11 @@ class UserPage extends React.Component {
                   <Blocks
                     styles="mb-4 bg-yellow"
                     text="Перейти к чату"
-                    arrow={BlackArrow}
                     anything={Messages}
                   />
                   <Blocks
                     styles="bg-purple"
-                    textColor="text-white"
+                    color="text-white"
                     text="Приглашения в команду"
                   />
                 </div>
@@ -54,7 +53,11 @@ class UserPage extends React.Component {
               <h1 className="text-center text-4xl text-white pt-2">300</h1>
             </div>
           </div>
-          <img className="absolute -top-12 left-10 no-select" src={BigStar} alt="" />
+          <img
+            className="absolute -top-12 left-10 no-select"
+            src={BigStar}
+            alt=""
+          />
           <Tabs className={`mt-8`}>
             <TabList className={`flex relative`}>
               <Tab className={styles.tab}>
@@ -76,29 +79,51 @@ class UserPage extends React.Component {
 
             <div className={styles.tabPanel}>
               <TabPanel className={`grid grid-cols-5 gap-y-7 gap-x-6`}>
+              <Link to="/info/project">
                 <Project
                   styles="bg-white grid place-content-center"
-                  content={<img className="m-auto" src={PlusLogo} alt="" />}
+                  content={
+                    <Plus
+                      className="m-auto text-gray"
+                      size={80}
+                      strokeWidth={4}
+                    />
+                  }
                 />
-                <Project text="Проект 1" />
-                <Project text="Без названия" />
-                <Project text="Без названия" />
-                <Project text="Без названия" />
-                <Project text="Без названия" />
-                <Project text="Без названия" />
+                </Link>
+                <Link to="/info/project">
+                  <Project text="Проект 1" />
+                </Link>
+                <Link to="/info/project">
+                  <Project text="Без названия" />
+                </Link>
+                <Link to="/info/project">
+                  <Project text="Без названия" />
+                </Link>
+                <Link to="/info/project">
+                  <Project text="Без названия" />
+                </Link>
+                <Link to="/info/project">
+                  <Project text="Без названия" />
+                </Link>
+                <Link to="/info/project">
+                  <Project text="Без названия" />
+                </Link>
               </TabPanel>
               <TabPanel>
                 <InformationBlocks
-                  link="/info/task"
+                  link="/info/compition"
                   number={5}
                   text="Участие в конкурсах: 6"
                   color="bg-purple"
                 />
                 <InformationBlocks
+                  link="/info/task"
                   number={5}
                   text="Всего выполнено заданий: 14"
                 />
                 <InformationBlocks
+                  link="/info/order"
                   number={5}
                   text="Всего выполнено заказов: 7"
                   color="bg-yellow"
@@ -106,15 +131,18 @@ class UserPage extends React.Component {
               </TabPanel>
               <TabPanel>
                 <InformationBlocks
+                  link="/compition"
                   number={5}
                   text="Отправлено заявок на конкурсы: 6"
                   color="bg-purple"
                 />
                 <InformationBlocks
+                  link="/task"
                   number={5}
                   text="Всего ожидается заданий: 14"
                 />
                 <InformationBlocks
+                  link="/order"
                   number={5}
                   text="Всего ожидается заказов: 7"
                   color="bg-yellow"
@@ -122,15 +150,14 @@ class UserPage extends React.Component {
               </TabPanel>
               <TabPanel>
                 <InformationBlocks
+                  link="/compition"
                   number={5}
                   text="Конкурсы: 6"
                   color="bg-purple"
                 />
+                <InformationBlocks link="/task" number={5} text="Задания: 14" />
                 <InformationBlocks
-                  number={5}
-                  text="Задания: 14"
-                />
-                <InformationBlocks
+                  link="/order"
                   number={5}
                   text="Заказы: 7"
                   color="bg-yellow"
@@ -139,11 +166,11 @@ class UserPage extends React.Component {
               <TabPanel>
                 <Text text="Последние достижения:" /> <br /> <br />
                 <div className="grid grid-cols-5">
-                <Achievement />
-                <Achievement place={Third} />
-                <Achievement place={Firts} />
-                <Achievement />
-                <Achievement />
+                  <Achievement />
+                  <Achievement place={Third} />
+                  <Achievement place={Firts} />
+                  <Achievement />
+                  <Achievement />
                 </div>
               </TabPanel>
             </div>

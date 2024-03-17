@@ -2,7 +2,7 @@ import React from "react";
 import Info from "./Info";
 import DarkGrayButton from "./DarkGrayButton";
 
-class CompletedTaskInfo extends React.Component {
+class TaskInfo extends React.Component {
   render() {
     return (
       <>
@@ -18,11 +18,11 @@ class CompletedTaskInfo extends React.Component {
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat."
-          button={<DarkGrayButton text="Получено баллов: 20" />}
+          button={<DarkGrayButton text="Отправить заявку" />}
         />
       </>
     );
   }
 }
 
-export default CompletedTaskInfo;
+export default TaskInfo;

@@ -14,8 +14,8 @@ function Login() {
                 <img src={userIcon} className="absolute -top-20" alt="" />
 
 
-                <Input style={Styles.input} placeholder="email"/> <br />
-                <Input style={Styles.input} placeholder="пароль"/> <br />
+                <Input style={Styles.input} type="email" placeholder="email"/> <br />
+                <Input style={Styles.input} type="password" placeholder="пароль"/> <br />
 
                 <Link to="/user">
                     <button className={Styles.button}>Войти</button>

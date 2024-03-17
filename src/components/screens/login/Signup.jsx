@@ -8,8 +8,8 @@ function Signup() {
         <div className="bg-purple h-screen">
             <div className="center grid justify-items-center">
                 <Input style={Styles.input} placeholder="ФИО"/> <br />
-                <Input style={Styles.input} placeholder="email"/> <br />
-                <Input style={Styles.input} placeholder="номер телефона"/> <br />
+                <Input style={Styles.input} type="email" placeholder="email"/> <br />
+                <Input style={Styles.input} type="tel" placeholder="номер телефона"/> <br />
 
                 <Link to="/user/edit">
                     <button className={`${Styles.button} mt-5`}>Зарегистрироваться</button>

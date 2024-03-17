@@ -4,9 +4,10 @@ import Styles from "./AuthorizationInput.module.css";
 function AuthorizationInput(props) {
     return (
         <>
-    <input className={`${Styles.AuthorizationInput} ${props.style}`} type="text" placeholder={props.placeholder} />
+    <input className={`${Styles.AuthorizationInput} ${props.style}`} type={props.type} placeholder={props.placeholder} />
     </>
     )
 }
 
-export default AuthorizationInput
+AuthorizationInput.defaultProps = {type : "text"};
+export default AuthorizationInput;

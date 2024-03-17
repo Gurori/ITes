@@ -19,6 +19,7 @@ export default {
       'violaceous' : '#B74C85',
       'xanthous' : '#CBB43B',
       'reallygray' : '#747474',
+      'dark-gray' : '#646464',
       },
     },
   },

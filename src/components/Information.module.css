@@ -23,5 +23,5 @@ height: 227px;
 background: #252527;
 border-radius: 30px;
 
-@apply grid p-7 place-content-end;
+@apply grid p-4 place-content-end;
 }
